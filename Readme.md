@@ -1,2 +1,5 @@
 # Daily practice html+css from 2025/12/29
 希望有進步!
+
+2025-12-29 處理帳號成功上傳
+2025-12-30 學習顯示特殊字元(html entity)

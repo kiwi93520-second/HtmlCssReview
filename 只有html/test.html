@@ -7,10 +7,38 @@
 </head>
 <body>
     <h1>我是html文件</h1>
-    <h7>我是&lt;h7&gt;..&lt;/h7&gt;，通常只到h6</h7>
+    <h3>HTML全名:HyperText Markup Language 中文翻譯:超文本標記語言</h3>
+    <h3>&lt;!DOCTYPE html&gt; 是HTML文件(html5)的開頭宣告</h3>
+    <h3>&lt;head&gt;元素包含了文檔的元訊息和其他配置，這些設定不會直接顯示在網頁上。例如：使用標題（&lt;title&gt;）標籤來定義網頁顯示在瀏覽器標籤上的標題、使用 &lt;meta&gt; 標籤來設定字元集、使用連結（&lt;link&gt;） 標籤來連結到外部 CSS 樣式表，用於定義網頁的外觀。</h3>
+    <h7>我是&lt;h7&gt;..&lt;/h7&gt;，通常只到h6，有兩行h7以上不會換行</h7>
+    <h8>我是&lt;h8&gt;..&lt;/h8&gt;，即使一直加也是跟&lt;p&gt;一樣的大小</h8>
     <p>我是文字由"&lt;p&gt;..&lt;/p&gt;"組成</p>
     <hr>
     <p>水平分割線由&lt;hr&gt;表示，預設沒有垂直分割線</p>
-
+    <p>這是 <strong>粗體</strong> 文字樣式 &lt;strong&gt;粗體&lt;/strong&gt;</p>
+    <p>這是 <em>斜體</em> 文字樣式 &lt;em&gt;斜體&lt;/em&gt;</p>
+    <p>這是 <ins>底線</ins> 文字樣式 &lt;ins&gt;底線&lt;/ins&gt;</p>
+    <p>這是 <s>刪除線</s> 文字樣式 &lt;s&gt;刪除線&lt;/s&gt;</p>
+    <p>這是 <del>刪除線</del> 文字樣式 &lt;del&gt;刪除線&lt;/del&gt;</p>
+    <p>以下是圖片:由&lt;img src="來源" alt="替代文字" title="提示文字"&gt;標籤表示，裡面也可以設width和height不過建議用css改</p>
+    <img src="./imgs/test.png" alt="test image" title="我是示範圖片">
+    <p>以下是影片:由&lt;video src="來源" controls (autoplay/loop/muted(靜音)/poster(預覽))&gt;標籤表示，想要自動撥放需先加靜音屬性</p>
+    <p>video標籤只能播放直接的影片檔案(mp4, webm等)：</p>
+    <video controls autoplay muted width="400">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        你的瀏覽器不支援 HTML5 影片標籤
+    </video>
+    <p>YouTube影片需在&lt;iframe&gt;來引用</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0L6WTdZSLdw?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+    <p>video間容性標籤語法如下:</p>
+    <pre><code>
+        &lt;video controls&gt;
+            &lt;source src="影片來源" type="影片格式"&gt;
+            &lt;source src="影片來源" type="影片格式2"&gt;
+            &lt;source src="影片來源" type="影片格式3"&gt;
+            &lt;p&gt;你的瀏覽器不支援 HTML5 影片標籤&lt;/p&gt;
+        &lt;/video&gt;
+    </code></pre>
+    <p>audio寫法跟video類似，通常不會自動播放，需用js控制:由&lt;audio src="來源" controls (autoplay/loop/muted(靜音))&gt;標籤表示</p>
 </body>
 </html>

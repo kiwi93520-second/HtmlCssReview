@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <td>name</td>
+            <td>age</td>
+            <td>grade</td>
+        </tr>
+        <tr>
+            <td>alex</td>
+            <td>19</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>alice</td>
+            <td>19</td>
+            <td>S</td>
+        </tr>
+        
+    </table>
+
+    <br>
+    <p>th 代表 某一欄或某一列的標題 讓裡面文字水平居中和垂直居中</p>
+    <table border="2">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>grade</th>
+        </tr>
+        <tr>
+            <td>alex</td>
+            <td>19</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>alice</td>
+            <td>19</td>
+            <td>S</td>
+        </tr>
+        
+    </table>
+    <h2>表格結構標籤</h2>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>alex</td>
+                <td>19</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>alice</td>
+                <td>19</td>
+                <td>S</td>
+            </tr>
+        </tbody>
+        
+        
+    </table>
+
+    <h2>跨行合併(colspan) & 跨列合併(rowspan)</h2>
+    <h4>跨列合併(rowspan)</h4>
+    <table border=1>
+        <tr>
+            <td colspan=2>a</td>
+            
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <h4>跨行合併(colspan)</h4>
+    <table border=1>
+        <tr>
+            <td rowspan=2>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+</body>
+</html>

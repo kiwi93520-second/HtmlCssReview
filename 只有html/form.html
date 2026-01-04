@@ -8,7 +8,79 @@
 <body>
     <h2>form</h2>
     <form action="">
-        
+        <ul>
+            <li>
+                <label>
+                    帳號: <input type="text" placeholder="請輸入帳號" accesskey="s" autocomplete="off">
+                </label>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <label>
+                    密碼: <input type="password" placeholder="請輸入密碼" maxlength="6" autocomplete="off">
+                </label>
+                
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <!-- label 方法一 for id關聯 -->
+                性別: 
+                <input type="radio" name="gender" value="0" checked id="female">
+                <label for="female">女</label>
+                <input type="radio" name="gender" value="1" id="male">
+                <label for="male">男</label>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <!-- label 方法二 直接包住input標籤-->
+                愛好: 
+                <label>
+                    <input type="checkbox" name="hobby" value="0" checked>水彩
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="1">油畫
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="2">國畫
+                </label>  
+            </li>
+        </ul>
+        <ul>
+            <li>
+                頭像: <input type="file" name="file" multiple accept=".jeg,.png,.jpeg">
+                
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <label>
+                    留言: <textarea name="msg" cols="30" rows="10" placeholder="請輸入留言"></textarea>
+                </label>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                城市:
+                <select name="city" id="">
+                    <option value="基隆">基隆</option>
+                    <option value="台北">台北</option>
+                    <option value="桃園" selected>桃園</option>
+
+                </select>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <button disabled>登入</button>
+            </li>
+        </ul>
+
     </form>
+    <pre><code>
+
+    </code></pre>
 </body>
 </html>

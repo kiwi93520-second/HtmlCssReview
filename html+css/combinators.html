@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box p {
+            color: lightgreen;
+        }
+
+        div > span {
+            border-top: 5px solid red;
+        }
+
+        div+h5 {
+            background-color: black;
+            color: white;
+        }
+
+        h3 ~ p {
+            font-weight: bold;
+            background-color: #333333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>combinators</h1>
+    <h2>1.descendant combinators</h2>
+    <div class="box"><p>Text in .box</p></div>
+    <p>Text not in .box</p>
+
+    <h2>2.child combinator</h2>
+    <div>
+        <span>first item</span>
+        <br>
+        <span>
+            second item
+            <div> dd</div>
+        </span>
+    
+    </div>
+
+    <h2>3. Next-sibling combinator</h2>
+
+    <div>hello world1</div>
+    <h5>hello world2</h5>
+    <h5>hello world3</h5>
+
+    <h2>4. Subsequent-sibling combinator</h2>
+    <article>
+        <h3>A heading</h3>
+        <p>I am a paragraph.</p>
+        <div>I am a div</div>
+        <p>I am another paragraph.</p>
+    </article>
+    <h2>the css</h2>
+    <pre><code>
+        .box p {
+            color: lightgreen;
+        }
+
+        div > span {
+            border-top: 5px solid red;
+        }
+
+        div+h5 {
+            background-color: black;
+            color: white;
+        }
+
+        h3 ~ p {
+            font-weight: bold;
+            background-color: #333333;
+            color: white;
+        }
+    </code></pre>
+</body>
+</html>

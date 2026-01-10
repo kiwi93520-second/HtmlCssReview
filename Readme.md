@@ -1,5 +1,6 @@
 # Daily practice html+css from 2025/12/29
 希望有進步!
+[學習來源](https://www.bilibili.com/video/BV1MvaVzUEuz?spm_id_from=333.788.videopod.sections&vd_source=87a3b8eaf8bb9e46da331fbccd33b3e9)
 小技巧:修改:alt+shift 滑鼠往下拉
 
 2025-12-29 處理帳號成功上傳

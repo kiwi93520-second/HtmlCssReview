@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結構偽類選擇器</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .data {
+            /* 合併相鄰邊框 */
+            border-collapse: collapse;
+            border: 1px solid #f1f1f1;
+            width: 400px;
+            /* 水平居中 */
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+        }
+        .data tr{
+            height: 35px;
+        }
+        
+        table.data tr:first-child {
+            background-color: #8fbcf1;
+            color: #fff;
+        }
+
+        .data tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        
+
+        .data tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <table class="data">
+        <tr>
+            <th>name</th>
+            <th>grade</th>
+            <th>date</th>
+        </tr>
+        <tr>
+            <th>yu</th>
+            <th>B</th>
+            <th>2022//01/22</th>
+        </tr>
+        <tr>
+            <th>ivy</th>
+            <th>C</th>
+            <th>2023/09/13</th>
+        </tr>
+        <tr>
+            <th>doll</th>
+            <th>B+</th>
+            <th>2022/04/23</th>
+        </tr>
+        <tr>
+            <th>jen</th>
+            <th>A-</th>
+            <th>2024/07/06</th>
+        </tr>
+        <tr>
+            <th>zoe</th>
+            <th>A</th>
+            <th>2022/08/22</th>
+        </tr>
+        <tr>
+            <th>oven</th>
+            <th>C+</th>
+            <th>2022/01/08</th>
+        </tr>
+        <tr>
+            <th>sunny</th>
+            <th>B-</th>
+            <th>2023/05/23</th>
+        </tr>
+        <tr>
+            <th>den</th>
+            <th>A</th>
+            <th>2022/06/16</th>
+        </tr>
+    </table>
+</body>
+</html>

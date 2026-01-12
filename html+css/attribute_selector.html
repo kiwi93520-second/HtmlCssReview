@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+        a[id]{
+            color:red;
+        }
+
+        a[class^="font"]{
+            color: rgb(78, 194, 82);
+        }
+        a[class$="11"]{
+            color: rgb(194, 78, 186);
+        }
+        a[class*="f2"]{
+            color: rgb(194, 148, 78);
+        }
+        a[class="f211"]{
+            color: rgb(63, 209, 217);
+        }
+    </style>
+</head>
+<body>
+    <h3>1. a[id]{color: red;}=&gt; 找到包含指定屬性的元素</h3>
+    <a href="#">修改文字color</a> <br>
+    <a href="#" id="font">修改文字color</a> <br>
+    <a href="#" id="font14">修改文字color</a> <br>
+    <a href="#" id="font16">修改文字color</a> <br>
+    <a href="#" id="red">修改文字color</a> <br>
+
+    <h3>2. a[class^="font"]{ color: rgb(78, 194, 82);}=&gt; 找到屬性以指定值開頭的的元素</h3>
+    <a href="#">修改文字color</a> <br>
+    <a href="#" class="font">修改文字color</a> <br>
+    <a href="#" class="font14">修改文字color</a> <br>
+    <a href="#" class="font16">修改文字color</a> <br>
+    <a href="#" class="red">修改文字color</a> <br>
+
+    <h3>3. a[class$="11"]{ color: rgb(194, 78, 186);}=&gt; 找到屬性以指定值結尾的元素</h3>
+    <a href="#">修改文字color</a> <br>
+    <a href="#" class="fo">修改文字color</a> <br>
+    <a href="#" class="fo11">修改文字color</a> <br>
+    <a href="#" class="fo16">修改文字color</a> <br>
+    <a href="#" class="red">修改文字color</a> <br>
+
+    <h3>4. a[class*="f2"]{ color: rgb(194, 148, 78);}=&gt; 找到任意位置屬性包含指定字串的元素</h3>
+    <a href="#">修改文字color</a> <br>
+    <a href="#" class="fo">修改文字color</a> <br>
+    <a href="#" class="f211">修改文字color</a> <br>
+    <a href="#" class="f216">修改文字color</a> <br>
+    <a href="#" class="red">修改文字color</a> <br>
+
+    <h3>5. a[class="f211"]{ color: rgb(63, 209, 217);}=&gt; 找到屬性=指定字串的元素</h3>
+    <a href="#">修改文字color</a> <br>
+    <a href="#" class="fo">修改文字color</a> <br>
+    <a href="#" class="f211">修改文字color</a> <br>
+    <a href="#" class="f316">修改文字color</a> <br>
+    <a href="#" class="red">修改文字color</a> <br>
+    
+    
+</body>
+</html>

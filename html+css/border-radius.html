@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .radius1 { 
+            width:100px;
+            height:100px;
+            border-radius: 50px;
+            background-color: pink;
+        }
+       .radius2 { 
+            width:200px;
+            height:80px;
+            border-radius: 10px;
+            background-color: pink;
+        }
+        .radius3 { 
+            width:200px;
+            height:40px;
+            border-radius: 20px;
+            background-color: skyblue;
+            /*膠囊按鈕圓角設置為（寬/高）較小值的一半*/
+        }
+        .radius4 { 
+            width:100px;
+            height:100px;
+            border-radius: 10px 20px;
+            background-color: pink;
+        }
+        .radius5 { 
+            width:100px;
+            height:100px;
+            border-radius: 10px 15px 20px;
+            background-color: pink;
+        }
+         .radius6 { 
+            width:100px;
+            height:100px;
+            border-radius: 8px 10px 15px 20px;
+            background-color: pink;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>圓角邊框</h3>
+    <p> 
+           寫法：<br>
+           border-radius：  屬性值（px）<br>
+           border-radius: 左上/右下 右上/左下<br>
+           border-radius: 左上  右上/左下 右下<br>
+           border-radius : 左上 右上 右下 左下<br>
+           不需要設的圓角以0代替
+    </p>
+    <h3> 不同邊框</h3>
+    <div  class="radius1"></div>
+    <div  class="radius2"></div>
+    <div  class="radius3"></div>
+    <div  class="radius4">兩值</div>
+    <div  class="radius5">三值</div>
+    <div  class="radius6">四值</div>
+    
+    <h2>the css</h2>
+    <pre><code>
+        .radius1 { 
+            width:100px;
+            height:100px;
+            border-radius: 50px;
+            background-color: pink;
+        }
+       .radius2 { 
+            width:200px;
+            height:80px;
+            border-radius: 10px;
+            background-color: pink;
+        }
+        .radius3 { 
+            width:200px;
+            height:40px;
+            border-radius: 20px;
+            background-color: skyblue;
+            /*膠囊按鈕圓角設置為（寬/高）較小值的一半*/
+        }
+        .radius4 { 
+            width:100px;
+            height:100px;
+            border-radius: 10px 20px;
+            background-color: pink;
+        }
+        .radius5 { 
+            width:100px;
+            height:100px;
+            border-radius: 10px 15px 20px;
+            background-color: pink;
+        }
+         .radius6 { 
+            width:100px;
+            height:100px;
+            border-radius: 8px 10px 15px 20px;
+            background-color: pink;
+        }
+    </code></pre>
+</body>
+</html>

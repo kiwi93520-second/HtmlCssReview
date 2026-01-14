@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin</title>
+</head>
+<style>
+    [class^="box"]{
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+    }
+    .box1{
+        margin: 10px 20px 30px 40px;
+    }
+    .box2{
+        background-color: skyblue;
+    }
+    span{
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        margin: 10px 20px;
+    }
+    .box3{
+        /* margin: 0 auto; */
+        /* margin: auto; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box4{
+        margin-bottom: 100px;
+    }
+    .box5{
+        margin-top: 50px;
+    }
+    .box6{
+
+        background-color: aquamarine;
+        /* border: 1px solid #000; */
+        /* padding-top: 20px;  */
+        overflow: hidden;
+    }
+    .box7{
+        background-color: blanchedalmond;
+        height: 50px;
+        width: 50px;
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <h3>margin</h3>
+    <p>
+        margin: 10px; 上下左右都是10px<br>
+        margin: 10px 20px; 上下是10px，左右是20px<br>
+        margin: 10px 20px 30px; 上是10px，左右是20px，下是30px<br>
+        margin: 10px 20px 30px 40px; 上是10px，右是20px，下是30px，左是40px<br>
+        單邊設置<br>
+        margin-top: 10px;<br>
+        margin-bottom: 10px;<br>
+        margin-left: 10px;<br>
+        margin-right: 10px;<br>
+    </p>
+    <h2>行內元素無法設置寬高和上下margin，左右margin可以設置</h2>
+
+    
+    <div class="box1">第一盒子</div>
+    <div class="box2">第二盒子</div>
+    <span>行內</span>
+    <span>行內</span>
+
+    <h3>塊級元素居中</h3>
+    <div class="box3">居中</div>
+    <h3>上下外邊距合併:兩個盒子上下margin以最大值為準</h3>
+    <div class="box4">第四盒子:margin-bottom: 100px</div>
+    <div class="box5">第五盒子:margin-top: 50px</div>
+
+    <h3>上下外邊距塌陷:嵌套盒子，給子盒子設上下margin，父盒子會塌陷移動</h3>
+    <h3>1.給父盒子加border</h3>
+    <h3>2.給父盒子加padding</h3>
+    <h3>2.給父盒子加overflow:hidden;(最不影響父盒子寬高)</h3>
+    <div class="box6"><div class="box7"></div></div>
+    
+</body>
+</html>

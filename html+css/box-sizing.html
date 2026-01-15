@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sizing</title>
+    <style>
+        [class^="box"]{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            padding: 20px;
+            border: 10px solid red;
+
+
+        }
+        .box1{
+            width: 140px;
+            height: 140px;
+            box-sizing: content-box;
+        }
+        .box2{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h3>box-sizing</h3>
+    <p>box-sizing 定義元素大小的計算方式。默認值content-box，另一種是border-box</p>
+    <p>content-box 只有內容大小，不包含padding和border</p>
+    <p>border-box 包含內容大小還有padding和border</p>
+    <div class="box1">content-box</div>
+    <div class="box2">border-box</div>
+</body>
+</html>

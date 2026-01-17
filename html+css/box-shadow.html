@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color:pink;
+            margin:100px auto;
+            transition: all .3s;
+        }
+        .box:hover{
+            height: 220px;
+            width: 220px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <h3>box-shadow:x y 內陰影(inset) 影子半徑 擴散半徑 顏色</h3>
+    <h3>過渡Transition: 屬性 時間(s); 屬性變化使平滑過渡不瞬發。</h3>
+</body>
+</html>
